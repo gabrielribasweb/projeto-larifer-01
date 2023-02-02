@@ -1,0 +1,47 @@
+.mapasite {
+  margin: 5vw;
+}
+
+.mapasite__titulo {
+  color: var(--cor-principal);
+  font-weight: bold;
+  font-size: max(4vw, 18px);
+  line-height: normal;
+}
+
+.mapasite__lista {
+  list-style: decimal;
+  margin-block-start: 2vw;
+  list-style-position: inside;
+  font-size: max(2vw, 14px);
+  line-height: normal;
+  color: var(--cor-principal);
+}
+
+.mapasite__item::marker {
+  color: var(--cor-secundaria);
+}
+
+.mapasite__link {
+  color: var(--cor-principal);
+  text-decoration: underline;
+}
+
+.mapasite__link:hover {
+  color: var(--cor-principal-hover);
+}
+
+@media screen and (min-width: 993px) {
+  .mapasite {
+    margin: 2.5vw 5vw;
+  }
+
+  .mapasite__titulo {
+    font-size: max(2vw, 14px);
+  }
+
+  .mapasite__lista {
+    font-size: max(1.25vw, 14px);
+    margin-block-start: 1vw;
+  }
+}

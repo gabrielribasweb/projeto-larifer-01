@@ -1,0 +1,142 @@
+/* WHATSAPP  */
+.whatsapp {
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 85px;
+  z-index: 10;
+}
+
+.whatsapp--ativo:after{
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 2;
+}
+
+.whatsapp__imagem {
+  width: 15vw;
+  height: auto;
+  max-width: 50px;
+}
+
+.whatsapp__fechar {
+  width: 1rem;
+  position: absolute;
+  height: auto;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.whatsapp__enviar {
+  font-size: 1rem;
+}
+
+.whatsapp__box {
+  position: fixed;
+  font-size: 1rem;
+  right: 20px;
+  bottom: 85px;
+  width: 90%;
+  max-width: 400px;
+  z-index: 999;
+  display: none;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(172, 155, 149, 1);
+  -webkit-box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp__box--ativo {
+  display: block;
+}
+
+.whatsapp__cabecalho {
+  color: #fff;
+  background-color: rgba(38, 92, 84, 1);
+}
+
+.whatsapp__cabecalho,
+.whatsapp__formulario{
+  padding: 5% 10% 5% 5%;
+}
+
+.whatsapp__formulario {
+  background-image: url(./images/whatsappform-bg.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.whatsapp__ipt[type="text"],
+.whatsapp__ipt[type="email"],
+.whatsapp__ipt {
+  background-color: #fff;
+  border: 0px;
+  width: 100%;
+  padding: 1%;
+  margin-bottom: 1rem;
+  color: #6d6e70;
+  border: 1px solid #cacaca;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.whatsapp__ipt[type="text"]:hover,
+.whatsapp__ipt[type="email"]:hover,
+.whatsapp__ipt:hover {
+  background-color: #f5f5f5;
+}
+
+.whatsapp__enviar {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  border: 0px;
+  padding: 3% 5%;
+  margin: 5% auto;
+  background-color: rgba(83, 164, 81, 1);
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.whatsapp__enviar:hover {
+  background-color: rgb(60, 110, 18);
+}
+
+@media screen and (min-width: 993px) {
+  .whatsapp {
+    right: 25px;
+  }
+
+  .whatsapp__box {
+    position: fixed;
+    font-size: 0.9vw;
+    left: auto;
+    width: 20%;
+    z-index: 999;
+    max-width: none;
+  }
+
+  .whatsapp__fechar {
+    width: 1vw;
+  }
+
+  .whatsapp__enviar {
+    font-size: 1vw;
+  }
+}

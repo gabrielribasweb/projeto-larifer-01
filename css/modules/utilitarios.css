@@ -1,0 +1,19 @@
+.txt-upper {
+  font-size: 0.8em;
+}
+
+.txt-destaque {
+  color: var(--cor-principal);
+}
+
+.txt-b {
+  font-weight: bold;
+}
+
+.txt-bloco {
+  display: block;
+}
+
+.erro {
+  color: red;
+}

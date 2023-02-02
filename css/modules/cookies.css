@@ -1,0 +1,117 @@
+section,
+.consent_cookies {
+  line-height: 180%;
+  font-family: 'Fjalla One', sans-serif;
+}
+.consent_cookies {
+  display: none;
+  background-color: #000000;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  padding: 0.5% 1%;
+  text-align: center;
+  color: #fff;
+  transition: 400ms;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 0px -2px 4px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px -2px 4px 1px rgba(0, 0, 0, 0.3);
+}
+.consent_cookies a {
+  color: #fff;
+  text-decoration: underline;
+}
+.consent_cookies.active {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+}
+.cookie-btn {
+  background: #8545d7;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cookie-btn:hover {
+  background: #8545d7;
+}
+@media (min-width: 993px) {
+  .consent_cookies,
+  .cookie-btn {
+    font-size: 0.8rem;
+  }
+  .consent_cookies_p {
+    width: 70%;
+  }
+  .consent_cookies_btn {
+    width: 30%;
+  }
+}
+@media (max-width: 992px) {
+  .consent_cookies {
+    flex-direction: column;
+    z-index: 99999;
+    bottom: 5rem;
+    -webkit-box-shadow: 0 0 5px 1px rgb(0 0 0 / 30%);
+    box-shadow: 0 0 5px 1px rgb(0 0 0 / 30%);
+  }
+  .consent_cookies,
+  .cookie-btn {
+    font-size: 0.7rem;
+  }
+  .consent_cookies_p {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .consent_cookies.active {
+    bottom: 0;
+  }
+  .consent_cookies_btn {
+    width: 100%;
+  }
+}
+.consent_cookies_iframe {
+  position: fixed;
+  width: 90%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  z-index: -1;
+}
+.consent_cookies_popup {
+  width: 100%;
+  position: absolute;
+  height: 90%;
+  display: initial;
+  z-index: 999999999;
+}
+@media (max-width: 992px) {
+  .consent_cookies_popup {
+    height: 95%;
+  }
+}
+.consent_cookies_popup iframe {
+  width: 100%;
+  height: 100%;
+}
+.consent_cookies_close {
+  display: none;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  cursor: pointer;
+}
+.consent_cookies_close img {
+  width: 1.5rem;
+  height: auto;
+}

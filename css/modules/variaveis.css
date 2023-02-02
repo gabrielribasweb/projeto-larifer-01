@@ -1,0 +1,28 @@
+:root {
+  --cor-principal: white;
+  --cor-principal-hover: #adad06;
+  --cor-secundaria: #CDCC00;
+  --cor-secundaria-hover: #8d8d05;
+  --cor-secundaria--alt: #001C38;
+
+  --cor-titulos: #000000;
+  --cor-titulos-alt: #F6F512;
+
+  --cor-font: #707070;
+  --cor-font-alt: #404040;
+  --cor-menu: #54595F;
+  --cor-placeholder: #9C9A9A;
+  --cor-fundo: #F2F2F2;
+  --cor-fundo-alt: #00000029;
+  --cor-menu-item: #fcffdf;
+
+  --cor-whatsapp: #28611A;
+  --cor-whatsapp-hover: #163f0c;
+
+  --placeholder: #9C9A9A;
+  --sombra: #00000014;
+  --invisivel: transparent;
+  --branco: #ffffff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');

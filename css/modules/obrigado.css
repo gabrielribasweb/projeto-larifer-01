@@ -1,0 +1,87 @@
+.obrigado {
+  color: var(--cor-titulos);
+  background: var(--cor-secundaria);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vw 5vw;
+  position: relative;
+  box-sizing: content-box;
+}
+
+.obrigado__conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5vw;
+  margin-bottom: 5vw;
+}
+
+.obrigado__titulo {
+  font-size: 6vw;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.obrigado__texto {
+  font-size: 4vw;
+  line-height: 1.5;
+}
+
+.obrigado__contatos {
+  font-size: 3vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.obrigado__duvida {
+  line-height: 1;
+}
+
+.obrigado__email {
+  color: var(--cor-titulos);
+}
+
+.obrigado__email:hover {
+  color: var(--cor-botao-form-hover);
+}
+
+.obrigado__icon {
+  width: 2.5vw;
+  max-width: 25px;
+  height: auto;
+  vertical-align: middle;
+}
+
+@media (min-width: 993px) {
+  .obrigado {
+    font-size: 1.2vw;
+  }
+
+  .obrigado__conteudo {
+    row-gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .obrigado__titulo {
+    font-size: 3vw;
+  }
+
+  .obrigado__texto {
+    font-size: 1.5vw;
+  }
+
+  .obrigado__contatos {
+    font-size: 1.25vw;
+    gap: 0.5vw;
+  }
+
+  .obrigado__icon {
+    width: 1.25vw;
+    max-width: none;
+  }
+}

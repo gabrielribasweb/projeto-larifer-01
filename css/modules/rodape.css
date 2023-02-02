@@ -1,0 +1,256 @@
+.rodape {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 7.5vw;
+  color: var(--branco);
+  background: var(--cor-titulos);
+  font-size: max(1.05vw,14px);
+  line-height: 1.75;
+  margin-top: 10vw;
+  padding: 0vw 5vw 5vw;
+  font-family: sans-serif;
+}
+
+.rodape__coluna {
+  display: flex;
+  flex-direction: column;
+}
+
+.rodape__logo__integracao {
+  position: relative;
+  left: 73vh;
+  top: 7vh;
+}
+
+.rodape__logo {
+  width: 50vw;
+  align-self: center;
+}
+
+.rodape__redes {
+  display: flex;
+  gap: 7vw;
+  justify-content: center;
+}
+
+.rodape__social {
+  width: 8vw;
+}
+
+.rodape__titulo {
+  font-size: max(4vw, 14px);
+  font-weight: bold;
+}
+
+.rodape__infos {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.rodape__info {
+  display: block;
+}
+
+.rodape__icone {
+  width: 100%;
+  max-width: 3.5vw;
+  min-width: 10px;
+  vertical-align: middle;
+  margin-right: 1.5vw;
+}
+
+.rodape__link {
+  display: block;
+  text-align: center;
+}
+
+.rodape__baixo {
+  margin-top: 5vw;
+  text-align: center;
+}
+
+.rodape__copyright {
+  display: block;
+  font-size: max(3.25vw, 10px);
+  line-height: 1.5;
+  position: relative;
+}
+
+.rodape__copyright::after {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--cor-menu);
+  border-radius: 5vw;
+  width: 80%;
+  top: calc(0px - 2vw);
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.rodape__link {
+  margin-top: 5vw;
+}
+
+.rodape__integracao {
+  width: 3vw;
+  min-width: 50px;
+  max-width: 50px;
+}
+.rodape__facebook:hover {
+  width: 3vw;
+  min-width: 50px;
+  max-width: 50px;
+  background-image: url(./images/icons/facebook-1.png);
+}
+
+@media screen and (min-width: 993px) {
+  .rodape {
+    align-items: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vw;
+    row-gap: 1.5vw;
+    justify-content: space-between;
+    font-size: max(1.05vw,14px);
+    padding: 0 7.5vw 0.8vw 7.5vw;
+    margin-top: 5vw;
+}
+
+.rodape__coluna {
+  flex: 1;
+  margin-top: 0;
+  height: 2.3em;
+}
+
+
+
+  .rodape__coluna--alt {
+    margin: 0;
+  }
+
+  .rodape__coluna--endereco {
+    flex: 2.5;
+    display: contents;
+}
+
+.rodape__logo {
+  width: 11.3vw;
+  align-self: flex-start;
+  float: right;
+  position: relative;
+  left: 37.8%;
+  top: 20vh;
+  top: 4.2vh;
+}
+  .rodape__titulo {
+    font-size: 1.5vw;
+    
+    width: 1em;
+   
+    position: relative;
+    right: 1.6em;
+    top: 1.3em;
+}
+
+.rodape__icone {
+  max-width: 1.55vw;
+  margin-right: 0.5vw;
+}
+
+  .rodape__baixo {
+    flex-basis: 100%;
+    margin-top: 3vw;
+  }
+
+  .rodape__copyright {
+    font-size: max(1vw, 12px);
+  }
+
+  .rodape__copyright::after {
+    width: 102%;
+    top: calc(0px - -1.3vw);
+}
+
+  .rodape__link {
+    margin-top: 2vw;
+  }
+
+  .rodape__integracao {
+    min-width: initial;
+  }
+
+  .icones-rodape-div {
+    width: 100%;
+    height: 5.8vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 1.7em;
+}
+.icone-facebook {
+  background-repeat: no-repeat;
+  background-image: url(./images/icons/facebook.png);
+  width: 3vw;
+  height: 4vw;
+  background-size: 2.7vw;
+  transition: 0.7s;
+  border-radius: 20%;
+  margin-right: 0.25em;
+}
+.icone-facebook:hover {
+  background-repeat: no-repeat;
+  background-image: url(./images/icons/facebook-1.png);
+  width: 3vw;
+  height: 4vw;
+  background-size: 2.7vw;
+  transition: 0.7s;
+  border-radius: 20%;
+  margin-right: 0.25em;
+}
+.icone-instagram {
+  background-repeat: no-repeat;
+  background-image: url(./images/icons/instagram.png);
+  width: 3vw;
+  height: 4vw;
+  background-size: 2.7vw;
+  transition: 0.7s;
+  border-radius: 20%;
+  margin-left: 0.25em;
+}
+.icone-instagram:hover {
+  background-repeat: no-repeat;
+  background-image: url(./images/icons/instagram-1.png);
+  width: 3vw;
+  height: 4vw;
+  background-size: 2.7vw;
+  transition: 0.7s;
+  border-radius: 20%;
+  margin-left: 0.25em;
+}
+}
+
+
+
+.div_rodape_contatos {
+  display: flex;
+  align-content: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 47%;
+  margin-top: 0em;
+  position: relative;
+  top: 1.4vw;
+  height: 9.4vw;
+}
+
+.rodape__div__baixo {
+  display: inline-flex;
+}
+
+.rodape__div__baixo a {
+  display: inline-flex;
+  margin: 2em 1.1em;
+}

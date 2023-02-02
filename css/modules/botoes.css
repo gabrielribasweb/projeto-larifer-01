@@ -1,0 +1,129 @@
+.btns {
+  display: flex;
+  flex-direction: column;
+  font-size: max(3vw, 16px);
+  margin-top: 6vw;
+  row-gap: 3vw;
+}
+
+
+
+
+.btns--banner {
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.btns--empresa {
+  justify-content: flex-start;
+}
+
+.btn {
+  background: var(--cor-secundaria);
+  border: 1px solid var(--cor-secundaria);
+/*   border-radius: 1.5vw;*/ 
+ color: var( --cor-font-alt);
+  cursor: pointer;
+  font-weight: bold;
+  line-height: normal;
+  padding: 1vw 5vw;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background .5s, border-color .5s;
+}
+
+.btn:hover {
+  background: var(--cor-secundaria-hover);
+  border-color: var(--cor-secundaria-hover);
+  color: var(--branco);
+}
+
+.btn--alt {
+  background: var(--invisivel);;
+  border-color: var(--invisivel);;
+}
+
+.btn--alt:hover {
+  background: var(--cor-secundaria-hover);;
+  border-color: var(--cor-secundaria-hover);;
+  color: var(--branco);
+}
+
+.btn--alt:hover .btn__imagem {
+  filter: brightness(5);
+}
+
+.btn--banner {
+  color: var(--branco);
+}
+
+.btn--form {
+  font-size: max(3vw,14px);
+  padding: 1vw 5vw;
+}
+
+.btn--form:hover {
+  background-color: var(--cor-secundaria-hover);
+}
+
+.btn__imagem {
+  width: 1em;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 993px) {
+  .btn__topo{
+    padding: 0.65vw 2vw !important;
+    font-size: max(0.85vw,11px) !important;
+    border-radius: 0vw;
+}
+
+.btn {
+  padding: 0.55vw 2vw;
+  font-size: max(1.05vw,11px);
+  border-radius: 0vw;
+}
+
+
+  
+  .btns__topo {
+    flex-direction: row-reverse;
+    font-size: max(1.5vw,16px);
+    margin-top: 0vw;
+    display: flex;
+    width: 37em;
+    align-items: center;
+    left: 4em;
+    position: relative;
+}
+  
+  .btns {
+    flex-direction: row;
+    font-size: max(1.5vw, 16px);
+    margin-top: 3vw;
+  }
+
+  .btns--banner {
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .btns--obrigado {
+    justify-content: flex-start;
+  }
+
+  .btns--portifolio, .btns--int {
+    justify-content: center;
+  }
+
+  .btn--form {
+    font-size: max(1vw, 14px);
+    padding: 0.25vw 1.5vw;
+  }
+
+  .btn__imagem {
+    width: 1.25vw;
+    margin-right: .25vw;
+  }
+}

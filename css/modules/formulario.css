@@ -1,0 +1,174 @@
+
+
+.formulario {
+  background:white;
+  border-radius: 0.6vw;
+  color: var(--cor-titulos);
+  font-size: max(2.5vw, 14px);
+  line-height: 1.25;
+  padding: 5vw;
+  text-align: left;
+}
+
+.formulario__titulo {
+  font-size: 4.5vw;
+  font-weight: bold;
+  line-height: normal;
+  font-family: 'montreal';
+}
+
+.formulario__form {
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 2.5vw));
+  grid-column-gap: 3vw;
+}
+
+.formulario__link {
+  color: var(--branco);
+  transition: color .5s;
+}
+
+.formulario__link:hover {
+  color: var(--cor-botao);
+}
+
+.formulario__icone {
+  width: 3vw;
+  height: auto;
+  vertical-align: middle;
+  min-width: 15px;
+  max-width: 25px;
+}
+
+.formulario__dado {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  margin-top: 3vw;
+  flex: 1;
+}
+
+.formulario__dado--email {
+  grid-area: 4 / 1 / 5 / 3;
+}
+
+.formulario__dado--menssage {
+  grid-area: 5 / 1 / 6 / 3;
+}
+
+.formulario__etq {
+  font-weight: 600;
+}
+
+.formulario__ipt {
+  color: var(--cor-titulos);
+  background: var(--cor-fundo);
+  border: 1px solid var(--branco);
+  padding: 1vw;
+  font-size: max(2vw, 12px);
+  border-radius: 0.65vw;
+}
+
+.formulario__ipt:focus {
+  border-color: var(--cor-principal);
+}
+
+.formulario__ipt::placeholder {
+  color: var(--cor-placeholder);
+  font-size: max(2vw, 12px);
+}
+
+.formulario__envio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3vw;
+  width: 100%;
+  grid-area: 6 / 1 / 7 / 3;
+}
+
+.formulario__mensagem {
+  position: relative;
+  width: 80%;
+  display: none;
+  text-align: center;
+}
+
+.formulario__ponto {
+  animation-name: some;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: some;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: some;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: infinite;
+}
+
+.formulario__ponto:nth-child(1) {
+  animation-delay: 100ms;
+  -webkit-animation-delay: 100ms;
+  -moz-animation-delay: 100ms;
+}
+
+.formulario__ponto:nth-child(2) {
+  animation-delay: 300ms;
+  -webkit-animation-delay: 300ms;
+  -moz-animation-delay: 300ms;
+}
+
+.formulario__ponto:nth-child(3) {
+  animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
+  -moz-animation-delay: 500ms;
+}
+
+@media screen and (min-width: 993px) {
+  .formulario {
+    border-radius: 0.6vw;
+    font-size: max(1.25vw, 14px);
+    padding: 3vw;
+    box-sizing: border-box;
+  }
+
+  .formulario__titulo {
+    font-size: 1.8vw;
+  }
+
+  .formulario__form {
+    grid-template-columns: repeat(2,calc(50% - 0.75vw));
+    column-gap: 1.5vw;
+  }
+
+  .formulario__icone {
+    width: 1.5vw;
+    max-width: none;
+  }
+
+  .formulario__grupo {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+  }
+
+  .formulario__dado {
+    flex: 1;
+    margin-top: 1vw;
+    gap: .5vw;
+  }
+
+  .formulario__ipt {
+    padding: .5vw 1vw;
+    font-size: max(1vw, 14px);
+    border-radius: 0.65vw;
+  }
+
+  .formulario__ipt::placeholder {
+    font-size: max(1vw, 14px);
+  }
+
+  .formulario__envio {
+    margin-top: 2vw;
+  }
+}
